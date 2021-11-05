@@ -1,6 +1,6 @@
-# TEXO
+# TEXTO
 
-- [TEXO](#texo)
+- [TEXTO](#texto)
   - [Encabezados](#encabezados)
   - [Etiquetas de formato](#etiquetas-de-formato)
   - [Otras etiquetas](#otras-etiquetas)
