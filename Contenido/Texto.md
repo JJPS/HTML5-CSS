@@ -57,3 +57,4 @@ Hay multitud, todas le dan cierto estilo al texto que contienen y destacaremos l
 - `<br/>` Salto de línea.
 - `<p>...</p>` Párrafo.
 - `<hr/>` Separación de Tema.
+- `<span>..</span>` Contenedor en linea. Aplica estilo al texto o agrupa elementos.
