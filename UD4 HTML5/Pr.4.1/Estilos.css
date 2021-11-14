@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+header {
+    background-color: red;
+    /*border: 1px solid black;*/
+    margin: 6px;
+    padding: 6px;
+}
+
+#principal {
+    float:right;
+    width: 23%;
+}
+
+main {
+    background-color: cornflowerblue;
+    margin: 6px;
+    padding: 6px;
+    float: left;
+    width: 75%;
+}
+
+article {
+    background-color: green;
+    margin: 6px;
+    padding: 6px;
+}
+
+section {
+    background-color: greenyellow;
+    margin: 6px;
+    padding: 6px;
+}
+
+footer {
+    background-color: violet;
+    margin: 6px;
+    padding: 6px;
+    clear:both;
+}
+
+#pieDeMain {
+    background-color: hotpink;
+}
+
+
+nav {
+    background-color: yellow;
+    margin: 6px;
+    padding: 6px;
+}
+
+aside {
+    background-color: turquoise;
+    margin: 6px;
+    padding: 6px;
+}
+
+
+img {
+    width: 100px;
+}
+
+span#mg {
+    background-color: green;
+    margin: 20px;
+    padding: 10px;
+}
+
+div.inline {
+    border: 1px solid black;
+}
+
+div.inline p {
+    background-color: yellow;
+    border: 1px solid black;
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+}
+
+
+
+p:nth-of-type(1) {
+    background-color: blue;
+    width: 100%;
+
+}
+
+p:nth-of-type(2) {
+    background-color: red;
+    width: 50%;
+}
+
+p {
+    border: 1px solid black;
+    height: 100px;
+}
+
+.tabla {
+    display: table;
+    padding: 2px;
+}
+
+.fila {
+    display: table-row;
+    width: 100%;
+}
+
+.celda {
+    display: table-cell;
+    border: black 1px solid;
+    padding: 10px;
+    width: 50%;
+}

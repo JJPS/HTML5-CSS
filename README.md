@@ -1,106 +1,30 @@
 # SUMARIO
 
 - [SUMARIO](#sumario)
-- [HTML y CSS](#html-y-css)
-- [¿Qué es HTML?](#qué-es-html)
-  - [Etiquetas con contenido.](#etiquetas-con-contenido)
-  - [Etiquetas sin contenido](#etiquetas-sin-contenido)
-  - [Atributos](#atributos)
-  - [Tipos de etiquetas](#tipos-de-etiquetas)
-  - [Comentarios](#comentarios)
-# HTML y CSS
+- [Qué es HTML](#qué-es-html)
+- [Qué es CSS](#qué-es-css)
 
-Ejemplos y ejercicios de la UD4 de la asignatura DIW en el curso 21-22.
+Ejemplos, ejercicios y teoría de la asignatura DIW del curso 21-22.
 
-# ¿Qué es HTML?
+# Qué es HTML
 
-Definimos HTML como un lenguaje de marcas o etiquetas pero, ¿qué es eso de una etiqueta? y ¿qué tipos de etiquetas tengo?
+ HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web.
+ 
+ Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. HTML se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.1
 
-Básicamente podemos distinguir entre dos tipos de etiquetas:
+El lenguaje HTML basa su filosofía de desarrollo en la diferenciación. Para añadir un elemento externo a la página (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante texto. De este modo, la página web contiene solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final. Al ser un estándar, HTML busca ser un lenguaje que permita que cualquier página web escrita en una determinada versión, pueda ser interpretada de la misma forma (estándar) por cualquier navegador web actualizado.
 
-- Etiquetas con contenido
-- Etiquetas sin contenido
+HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpre­tar tanto por humanos como por máquinas. 
 
-## Etiquetas con contenido.
+[HTML 5](UD4%20HTML5/README.md)
+# Qué es CSS
 
-Son etiquetas que tiene tres partes (por este orden)
+CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web y GUIs para muchas aplicaciones móviles.
 
-- Apertura de la etiqueta
-- Contenido de la etiqueta
-- Cierre de la etiqueta
+CSS está diseñado principalmente para marcar la separación del contenido del documento y la forma de presentación de este, características tales como las capas o layouts, los colores y las fuentes.​ Esta separación busca mejorar la accesibilidad del documento, proveer más flexibilidad y control en la especificación de características presentacionales, permitir que varios documentos HTML compartan un mismo estilo usando una sola hoja de estilos separada en un archivo .css, y reducir la complejidad y la repetición de código en la estructura del documento.
 
-Algo así:
+La separación del formato y el contenido hace posible presentar el mismo documento marcado en diferentes estilos para diferentes métodos de renderizado, como en pantalla, en impresión, en voz, y dispositivos táctiles basados en el sistema Braille. También se puede mostrar una página web de manera diferente dependiendo del tamaño de la pantalla o tipo de dispositivo. 
 
-```HTML:
-<etiqueta>
-     Contenido de la etiqueta
-</etiqueta>
-```
+La especificación CSS es mantenida por el World Wide Web Consortium (W3C). El MIME type `text/css` está registrado para su uso por CSS descrito en el RFC 2318.​ El W3C proporciona una herramienta de validación de CSS gratuita para los documentos CSS. 
 
-HTML tiene un número limitado de etiquetas y no es necesario conocer todas. Con una lista más o menos pequeña podemos construir la gran mayoría de páginas web. En caso contrario, siempre podemos visitar las referencias.
-
-Un ejemplo de etiqueta de HTML con contenido sería un párrafo:
-
-```HTML
-<p>
-    HOLA MUNDO
-</p>
-```
-`<p>` Sería la apertura
-
-HOLA MUNDO sería el contenido, en este caso sólo texto aunque podríamos meter muchas cosas “dentro”
-
-`</p>` Sería el cierre de la etiqueta
-
-## Etiquetas sin contenido
-
-Son etiquetas que sólo tienen parte de apertura y carecen de contenido. Pueden estar cerradas o no, aunque yo os recomiendo que se cierren. De esta manera:
-
-```HTML
-<etiqueta >
-<etiqueta />
-```
-
-Un ejemplo de etiqueta HTML sin contenido sería una imagen:
-
-```html
-<img ...  />
-```
-
-## Atributos
-
-Las etiquetas pueden tener atributos de los que nos interesa saber lo siguiente:
-
-- Proporcionan información adicional sobre la etiqueta.
-- Las etiquetas puede tener o no tener atributos e incluso tener más de uno.
-- Siempre se añaden en la etiqueta de apertura.
-- Hay atributos generales (para todas) o específicos (para algunas).
-- Se representan nombre_atributo=”valor_atributo”.
-
-Un ejemplo:
-
-```html
-<img src="foto.png"  />
-```
-
-## Tipos de etiquetas
-
-Hay muchos tipos de etiquetas pero vamos a centrarnos en las siguientes:
-
-- [Etiquetas de cabecera](Contenido/Cabecera.md)
-- [Etiquetas de texto](Contenido/Texto.md)
-- [Etiquetas de imágenes, tablas, listas y enlaces](Contenido/Imagenes.md)
-- [Etiquetas multimedia](Contenido/Multimedia.md)
-- [Etiquetas semánticas](Contenido/Semanticas.md)
-
-## Comentarios
-
-Además de todas estas etiquetas nuestra página web podrá llevar comentarios que son, normalmente, texto descriptivos que no se van a mostrar en nuestra web.
-
-Los comentarios van encerrados en esta estructura `<!-- -->` y un ejemplo sería:
-
-```HTML
-<!-- Esto es un comentario en HTML -->
-```
-
-
+[CSS](UD5%20CSS/README.md)
